@@ -7,3 +7,10 @@
 * {
   margin: 0;
 }
+
+:root {
+  --color-primary: #004D61;
+  --color-secondary: #FF5031;
+  --color-tertiary: #DEE9EA;
+  --color-quaternary: #F8F8F8;
+}
