@@ -1,0 +1,18 @@
+.banner {
+  // font-size: 24px;
+  // color: #333;
+  // text-align: center;
+  // padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  background-color: #f4f4f4;
+  // border-radius: 8px;
+
+  .textBanner {
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 28px;
+    color: #000000;
+  }
+}

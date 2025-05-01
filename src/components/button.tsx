@@ -3,8 +3,6 @@ export type ButtonProps = Readonly<{
   onClick: () => void;
 }>;
 
-export const Button = ({ label, onClick }: ButtonProps) => (
-  <button type="button" onClick={onClick}>
-    {label}
-  </button>
+export const Button = ({ label }: ButtonProps) => (
+  <button type="button">{label}</button>
 );
