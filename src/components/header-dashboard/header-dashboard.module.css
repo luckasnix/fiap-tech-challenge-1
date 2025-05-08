@@ -25,7 +25,7 @@
   font-family: var(--font-inter);
   font-weight: 600;
   font-size: 13px;
-  color: #FFFFFF;
+  color: var(--color-white);
 }
 
 .menuLeft {
@@ -39,7 +39,7 @@
   left: 0;
   height: 256px;
   width: 172px;
-  background-color: #E4EDE3;
+  background-color: var(--color-quinary);
   padding: var(--spacing-3);
   display: none;
   animation: fadein 0.2s ease-in-out;
