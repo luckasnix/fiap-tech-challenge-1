@@ -1,0 +1,13 @@
+.onboardingBanner {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.textBanner {
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: 28px;
+  color: #000000;
+  max-width: 434px;
+}
