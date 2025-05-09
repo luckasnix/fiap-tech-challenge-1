@@ -1,0 +1,25 @@
+.featureHighlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 282px;
+}
+
+.titleHighlight {
+  font-family: var(--font-inter);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #47a138;
+  line-height: 150%;
+}
+
+.textHighlight {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 1rem;
+  color: #767676;
+  line-height: 120%;
+  text-align: center;
+}
