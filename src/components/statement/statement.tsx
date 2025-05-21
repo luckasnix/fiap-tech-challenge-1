@@ -2,7 +2,7 @@ import { Button } from '../button/button';
 import { VectorImage } from '../vector-image/vector-image';
 import { StatementItem } from './statement-item';
 import styles from './statement.module.css';
-import { statementList } from './statementMock';
+import { statementList } from './statement-mock';
 
 export const Statement = () => {
   return (

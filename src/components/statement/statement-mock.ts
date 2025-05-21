@@ -1,6 +1,6 @@
-import { StatementItemPros } from "./statement-item";
+import { StatementItemProps } from "./statement-item";
 
-export const statementList: StatementItemPros[] = [
+export const statementList: StatementItemProps[] = [
   {
     id: 1,
     month: 'Novembro',
