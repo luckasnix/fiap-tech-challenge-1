@@ -1,0 +1,15 @@
+.homeBanner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bannerTitle {
+  font-family: var(--font-inter);
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: #000000;
+  max-width: 30rem;
+}

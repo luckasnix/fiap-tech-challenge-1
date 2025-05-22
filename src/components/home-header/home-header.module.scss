@@ -1,0 +1,22 @@
+.homeHeader {
+  background-color: var(--color-black);
+  padding: 1rem 0;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.headerButtons {
+  display: flex;
+  gap: 1rem;
+}
