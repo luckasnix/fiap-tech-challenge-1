@@ -1,4 +1,4 @@
-import styles from "./menu-nav.module.scss";
+import styles from "./menu-nav.module.css";
 
 export type MenuNavProps = Readonly<{
   items: Array<{
@@ -7,9 +7,9 @@ export type MenuNavProps = Readonly<{
 }>;
 
 export const MenuNav = ({ items }: MenuNavProps) => (
-  <div className={styles.menuNav}>
+  <div className={styles.menu}>
     {items.map((item, index) => (
-      <a key={index} className={styles.menuNavItem}>
+      <a key={index} className={styles.navItems}>
         {item.label}
       </a>
     ))}

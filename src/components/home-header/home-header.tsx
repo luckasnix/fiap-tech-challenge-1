@@ -1,9 +1,9 @@
 "use client";
 
-import { BrandLogo } from "../brand-logo/brand-logo";
 import { Button } from "../button/button";
 import { MenuNav } from "../menu-nav/menu-nav";
-import styles from "./home-header.module.scss";
+import { VectorImage } from "../vector-image/vector-image";
+import styles from "./home-header.module.css";
 
 export type HomeHeaderProps = Readonly<{
   items: Array<{
@@ -15,14 +15,14 @@ export const HomeHeader = () => {
   const navItems = [{ label: "Sobre" }, { label: "Serviços" }];
 
   return (
-    <header className={styles.homeHeader}>
-      <div className={`${styles.headerContainer} container`}>
-        <div className={styles.headerLogo}>
-          <BrandLogo />
+    <header className={styles.header}>
+      <div className={`${styles.container} container`}>
+        <div className={styles.navbar}>
+          <VectorImage name="image-logo" />
           <MenuNav items={navItems} />
         </div>
 
-        <div className={styles.headerButtons}>
+        <div className={styles.buttons}>
           <Button
             variant="homePrimary"
             onClick={() => {

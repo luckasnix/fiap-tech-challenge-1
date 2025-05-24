@@ -1,6 +1,6 @@
 import { HomeBanner } from "../home-banner/home-banner";
 import { HomeHighlight } from "../home-highlight/home-highlight";
-import styles from "./home-main.module.scss";
+import styles from "./home-main.module.css";
 
 export const HomeMain = () => {
   const banner = {
@@ -13,7 +13,7 @@ export const HomeMain = () => {
   };
 
   return (
-    <main className={styles.homeMain}>
+    <main className={styles.main}>
       <div className="container">
         <HomeBanner
           title={banner.title}

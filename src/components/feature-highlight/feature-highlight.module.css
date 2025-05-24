@@ -1,25 +1,25 @@
-.featureHighlight {
+.feature {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
-  max-width: 16rem;
+  gap: var(--spacing-4);
+  max-width: 440px;
 }
 
-.titleHighlight {
+.feature .title {
   font-family: var(--font-inter);
+  font-size: var(--spacing-5);
+  color: var(--color-success);
   font-weight: 700;
-  font-size: 1.25rem;
-  color: #47a138;
   line-height: 150%;
 }
 
-.textHighlight {
+.feature .description {
   font-family: var(--font-inter);
+  font-size: var(--spacing-4);
+  color: var(--color-gray);
   font-weight: 400;
-  font-size: 1rem;
-  color: #767676;
   line-height: 120%;
   text-align: center;
 }

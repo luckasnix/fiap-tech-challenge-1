@@ -1,5 +1,5 @@
-import styles from "./feature-highlight.module.scss";
 import Image from "next/image";
+import styles from "./feature-highlight.module.css";
 
 export type FeatureHighlightProps = Readonly<{
   title: string;
@@ -14,7 +14,7 @@ export const FeatureHighlight = ({
   iconName,
   alt,
 }: FeatureHighlightProps) => (
-  <div className={styles.featureHighlight}>
+  <div className={styles.feature}>
     <Image
       src={`/images/icons/${iconName}.svg`}
       width={56}
@@ -22,7 +22,7 @@ export const FeatureHighlight = ({
       alt={alt}
     />
 
-    <p className={styles.titleHighlight}>{title}</p>
-    <p className={styles.textHighlight}>{text}</p>
+    <p className={styles.title}>{title}</p>
+    <p className={styles.description}>{text}</p>
   </div>
 );

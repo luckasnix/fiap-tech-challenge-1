@@ -1,5 +1,5 @@
 import { FeatureHighlight } from "../feature-highlight/feature-highlight";
-import styles from "./home-highlight.module.scss";
+import styles from "./home-highlight.module.css";
 
 export const HomeHighlight = () => {
   const title = "Vantagens do nosso banco:";
@@ -31,10 +31,10 @@ export const HomeHighlight = () => {
   ];
 
   return (
-    <div className={styles.homeHighlight}>
-      <h3 className={styles.highlightTitle}>{title}</h3>
+    <div className={styles.highlight}>
+      <h3 className={styles.title}>{title}</h3>
 
-      <div className={styles.highlightItems}>
+      <div className={styles.items}>
         {highlights.map((item, index) => (
           <FeatureHighlight
             key={index}
