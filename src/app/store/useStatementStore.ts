@@ -1,30 +1,35 @@
 import { create } from "zustand";
-import { StatementItemProps } from "~/components/statement/statement-item";
+import { TransactionProps } from "~/components/statement/transaction-item";
 
 type Store = {
-  statements: Array<StatementItemProps>;
-  addStatement: (statement: StatementItemProps) => void;
-  removeStatement: (id: number) => void;
-  updateStatement: (
+  transactions: Array<TransactionProps>;
+  addTransaction: (transaction: TransactionProps) => void;
+  removeTransaction: (id: number) => void;
+  updateTransaction: (
     id: number,
-    updatedData: Partial<StatementItemProps>,
+    updatedData: Partial<TransactionProps>,
   ) => void;
+  getTotal: () => void;
 };
 
-const useStatementStore = create<Store>((set) => ({
-  statements: [],
-  addStatement: (statement: StatementItemProps) =>
-    set((state) => ({ statements: [...state.statements, statement] })),
-  removeStatement: (id: number) =>
+const useStatementStore = create<Store>((set, get) => ({
+  transactions: [],
+  addTransaction: (transaction: TransactionProps) =>
+    set((state) => ({ transactions: [...state.transactions, transaction] })),
+  removeTransaction: (id: number) =>
     set((state) => ({
-      statements: state.statements.filter((item) => item.id !== id),
+      transactions: state.transactions.filter((item) => item.id !== id),
     })),
-  updateStatement: (id: number, updatedData: Partial<StatementItemProps>) =>
+  updateTransaction: (id: number, updatedData: Partial<TransactionProps>) =>
     set((state) => ({
-      statements: state.statements.map((item) =>
+      transactions: state.transactions.map((item) =>
         item.id === id ? { ...item, ...updatedData } : item,
       ),
     })),
+  getTotal: () => {
+    const { transactions } = get();
+    return transactions.reduce((sum, item) => sum + (item.value || 0), 0);
+  },
 }));
 
 export default useStatementStore;

@@ -2,7 +2,8 @@ import { create } from "zustand";
 
 type User = Readonly<{
   name: string;
-  accountBalance: number;
+  email: string;
+  password: string;
 }>;
 
 type Store = {
