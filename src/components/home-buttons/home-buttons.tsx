@@ -17,6 +17,7 @@ export const HomeButtons = () => {
     <div className={styles.buttons}>
       <Button
         variant="homePrimary"
+        size={windowWidth > 720 ? "medium" : "small"}
         onClick={() => {
           console.log("Abrir minha conta");
         }}
@@ -26,6 +27,7 @@ export const HomeButtons = () => {
 
       <Button
         variant="homeSecondary"
+        size={windowWidth > 720 ? "medium" : "small"}
         onClick={() => {
           console.log("Já tenho conta");
         }}

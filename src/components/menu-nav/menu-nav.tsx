@@ -22,14 +22,18 @@ export const MenuNav = ({ items }: MenuNavProps) => {
   return (
     <div className={styles.menu}>
       {windowWidth <= 360 ? (
-        <Button variant="ghost" onClick={() => setIsModalOpen(true)}>
+        <Button
+          variant="ghost"
+          size="ghost"
+          onClick={() => setIsModalOpen(true)}
+        >
           <VectorImage name="icon-menu" />
         </Button>
       ) : (
         <ul>
           <li className={styles.items}>
             {items.map((item, index) => (
-              <Button key={index} variant="ghost">
+              <Button key={index} variant="ghost" size="ghost">
                 <Link href="#">{item.label}</Link>
               </Button>
             ))}
@@ -40,7 +44,11 @@ export const MenuNav = ({ items }: MenuNavProps) => {
       {isModalOpen ? (
         <div className={styles.modalMenu} ref={ref}>
           <div className={styles.closeIconWrapper}>
-            <Button variant="ghost" onClick={() => setIsModalOpen(false)}>
+            <Button
+              variant="ghost"
+              size="ghost"
+              onClick={() => setIsModalOpen(false)}
+            >
               <VectorImage name="icon-close" />
             </Button>
           </div>
@@ -48,7 +56,7 @@ export const MenuNav = ({ items }: MenuNavProps) => {
           <ul>
             <li className={styles.items}>
               {items.map((item, index) => (
-                <Button key={index} variant="ghost">
+                <Button key={index} variant="ghost" size="ghost">
                   <Link href="#">{item.label}</Link>
                 </Button>
               ))}
