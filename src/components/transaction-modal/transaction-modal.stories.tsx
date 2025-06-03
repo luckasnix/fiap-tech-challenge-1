@@ -48,7 +48,11 @@ export const Basic: Story = {
     return (
       <>
         <button onClick={() => setIsOpen(true)}>Abrir Modal</button>
-        <TransactionModal {...args} open={isOpen} onClose={() => setIsOpen(false)} />
+        <TransactionModal
+          {...args}
+          open={isOpen}
+          onClose={() => setIsOpen(false)}
+        />
       </>
     );
   },
