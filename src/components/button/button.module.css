@@ -7,8 +7,6 @@
   text-align: center;
   border-radius: var(--spacing-2);
   transition: all 0.3s ease;
-  min-width: 180px;
-  height: var(--spacing-12);
   padding: 0 var(--spacing-4);
 }
 
@@ -17,6 +15,8 @@
   background-color: var(--color-success);
   color: var(--color-black);
   border: 2px solid var(--color-success);
+  min-width: 180px;
+  height: 52px;
 }
 
 .button.homePrimary:hover {
@@ -30,6 +30,8 @@
   background-color: var(--color-black);
   color: var(--color-success);
   border: 2px solid var(--color-success);
+  min-width: 180px;
+  height: 52px;
 }
 
 .button.homeSecondary:hover {
@@ -48,4 +50,14 @@
 
 .button.ghost:hover {
   opacity: 0.8;
+}
+
+@media (max-width: 720px) {
+  .button.homePrimary {
+    min-width: 140px;
+  }
+
+  .button.homeSecondary {
+    min-width: 140px;
+  }
 }
