@@ -1,8 +1,8 @@
 import { Button } from "../button/button";
 import { VectorImage } from "../vector-image/vector-image";
-import { TransactionItem } from "./transaction-item";
-import styles from "./statement.module.css";
 import { statement } from "./statement-mock";
+import styles from "./statement.module.css";
+import { TransactionItem } from "./transaction-item";
 
 export const Statement = () => {
   return (
@@ -11,10 +11,10 @@ export const Statement = () => {
         <header className={styles.header}>
           <span>Extrato</span>
           <div className={styles.iconWrapper}>
-            <Button variant="ghost">
+            <Button variant="ghost" size="ghost">
               <VectorImage name="icon-edit-filled" />
             </Button>
-            <Button variant="ghost">
+            <Button variant="ghost" size="ghost">
               <VectorImage name="icon-delete-filled" />
             </Button>
           </div>
