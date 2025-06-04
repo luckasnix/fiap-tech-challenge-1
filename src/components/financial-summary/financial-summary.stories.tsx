@@ -1,11 +1,11 @@
-import type { Meta, StoryObj } from "@storybook/nextjs";
+import type { Meta, StoryObj } from "@storybook/react";
 import { FinancialSummary } from "./financial-summary";
 
 const meta: Meta<typeof FinancialSummary> = {
   title: "Components/FinancialSummary",
   component: FinancialSummary,
   parameters: {
-    layout: ["fullscreen", "centered"],
+    layout: "centered",
     docs: {
       description: {
         component: `
@@ -28,7 +28,7 @@ Componente de resumo financeiro que exibe:
   date={Date.now()}
   checkingAccountValue={1500}
   onNewTransactionButtonClick={() => console.log("Nova transação")}
-/>
+ />
 \`\`\`
         `,
       },
